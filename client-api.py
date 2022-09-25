@@ -63,7 +63,6 @@ def authorize():
 @auth_required
 def protected(*args, **kwargs):
     print(args, kwargs)
-    # user = kwargs["user"]
     print(request.json)
     return jsonify({"message": "a"})
 
